@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- arguments -->
+
+  <param name="/use_sim_time" value="true" />
+
+  <arg name="nodelet_manager" default="velodyne_nodelet_manager" />
+  <arg name="points_topic" default="/velodyne_points" />
+  <arg name="imu_topic" default="/imu/data" />
+  <arg name="odom_child_frame_id" default="velodyne" />
+
+  <arg name="model" default="$(find hdl_localization)/urdf/ev_bot.urdf"/>
+  
+  <param name="robot_description" command="$(find xacro)/xacro $(arg model)" />
+  <!-- in case you use velodyne_driver, comment out the following line -->
+  <node pkg="nodelet" type="nodelet" name="$(arg nodelet_manager)" args="manager" output="screen"/>
+
+    <!-- globalmap_server_nodelet -->
+    <node pkg="nodelet" type="nodelet" name="globalmap_server_nodelet" args="load hdl_localization/GlobalmapServerNodelet $(arg nodelet_manager)">
+      <param name="globalmap_pcd" value="/home/yihan/Downloads/all_points_XYZL.pcd" />
+      <!--param name="globalmap_pcd" value="$(find hdl_localization)/data/Transformed_finalCloud(big).pcd" /-->
+      <param name="downsample_resolution" value="0.4" />  <!-- 0.1, 0.4 -->
+    
+    </node>
+
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find hdl_localization)/rviz/hdl_localization.rviz" /> 
+
+</launch>
+
+
+
+
+ 

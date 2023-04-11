@@ -1,0 +1,8 @@
+
+        <param name="init_pos_x" value="-8.0" /> <!-- 24.0, 60, 60, 8.0 -->
+        <param name="init_pos_y" value="1.0" /> <!-- 0.0, -50, -65.0, 5.0 -->
+        <param name="init_pos_z" value="0.0" /> <!-- 0.0, -2.5, -2.0, 0.0 -->
+        <param name="init_ori_w" value="0.993" /> <!-- 1.0, 0.707, 0.819, 0.174 -->
+        <param name="init_ori_x" value="0.0" /> <!-- 0.0, 0.0, 0.0, 0.0 -->
+        <param name="init_ori_y" value="0.0" /> <!-- 0.0, 0.0, 0.0, 0.0 -->
+        <param name="init_ori_z" value="0.122" /> <!-- 0.0, -0.707, -0.574, 0.985 -->
