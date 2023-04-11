@@ -7,7 +7,8 @@ We reimplement it on our own dataset with 3d object detection on pre-built map o
 We work on 3D Object Detection and HDL-Localization for visualizing detected objects on pointcloud maps. Our sensors include
 
 Real-world testing:
-![](pic/demo.gif)
+![](pic/demo1.gif)
+![](pic/demo2.gif)
 
 Our Sensor Platform:
 ![](pic/Image.jpeg)
