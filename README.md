@@ -23,7 +23,7 @@ The following ros packages are required:
 - <a href="https://github.com/koide3/ndt_omp">ndt_omp</a>
 
 ## Parameters
-All parameters are listed in *launch/*.launch* as ros params.<br>
+All parameters are listed in *launch/*.launch as ros params.<br>
 You can specify the initial sensor pose using "2D Pose Estimate" on rviz, or using ros params (see example launch file).
 You can launch the package by establishing your own launch file.
 
