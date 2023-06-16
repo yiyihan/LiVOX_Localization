@@ -3,7 +3,7 @@
 ***Livox_localization*** is a ROS package for real-time 3D localization using a Livox LIDAR. Our work is based on the work [HDL_Localization](https://github.com/koide3/hdl_localization). This package first estimates the sensor pose from IMU data implemented on the LIDAR by applying Unscented Kalman Filter-based pose estimation, and then performs multi-threaded NDT scan matching between a globalmap point cloud and input point clouds to correct the estimated pose. IMU-based pose prediction is optional. If you disable it, the system predicts the sensor pose with the constant velocity model without IMU information.
 
 We integrate the algorithm on our own dataset with 3d object detection on pre-built map of our previous [repo](https://github.com/yiyihan/Map_Render). 
-<!--
+
 We work on 3D Object Detection and Livox_localization for visualizing detected objects on pointcloud maps. Our sensors include
 
 Real-world testing:
@@ -12,7 +12,7 @@ Real-world testing:
 
 Our Sensor Platform:
 ![](pic/Image.jpeg)
--->
+
 ## Requirements
 ***Livox_localization*** requires the following libraries:
 - OpenMP
